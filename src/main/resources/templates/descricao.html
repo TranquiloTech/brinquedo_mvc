@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Descrição do Brinquedo</title>
+</head>
+<body>
+<div class="container">
+    <h1 th:text="'Descrição do Brinquedo: ' + ${brinquedo.nome}"></h1>
+    <p><strong>Nome:</strong> <span th:text="${brinquedo.nome}"></span></p>
+    <p><strong>Descrição:</strong> <span th:text="${brinquedo.descricao}"></span></p>
+    <a href="/listar" class="button">Voltar para Lista</a>
+</div>
+</body>
+</html>
